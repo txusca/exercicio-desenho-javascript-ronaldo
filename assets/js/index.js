@@ -37,6 +37,6 @@ function draw(event) {
 }
 
 saveBtn.addEventListener("click", (event) => {
-    let teste = canvas.toDataURL("images/png");
-    inputImage.src = teste;
+    let urlImage = canvas.toDataURL("images/png");
+    inputImage.src = urlImage;
 });
