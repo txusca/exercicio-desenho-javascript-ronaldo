@@ -1,4 +1,5 @@
 var saveBtn = document.getElementById("save-image");
+var inputImage = document.getElementById("desenho");
 
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
@@ -36,5 +37,6 @@ function draw(event) {
 }
 
 saveBtn.addEventListener("click", (event) => {
-    
+    let teste = canvas.toDataURL("images/png");
+    inputImage.src = teste;
 });
