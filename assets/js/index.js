@@ -39,4 +39,5 @@ function draw(event) {
 saveBtn.addEventListener("click", (event) => {
     let urlImage = canvas.toDataURL("images/png");
     inputImage.src = urlImage;
+    inputImage.style.display = "initial"
 });
